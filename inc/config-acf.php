@@ -41,21 +41,21 @@ if(function_exists("register_field_group"))
 				array (
 					'param' => 'page_template',
 					'operator' => '!=',
-					'value' => 'custom-sidemenu-all.php',
+					'value' => 'template-sidemenu-all.php',
 					'order_no' => 1,
 					'group_no' => 0,
 				),
 				array (
 					'param' => 'page_template',
 					'operator' => '!=',
-					'value' => 'custom-aside.php',
+					'value' => 'template-aside.php',
 					'order_no' => 2,
 					'group_no' => 0,
 				),
 				array (
 					'param' => 'page_template',
 					'operator' => '!=',
-					'value' => 'custom-aside-tabs.php',
+					'value' => 'template-aside-tabs.php',
 					'order_no' => 3,
 					'group_no' => 0,
 				),
@@ -89,7 +89,7 @@ if(function_exists("register_field_group"))
 				array (
 					'param' => 'page_template',
 					'operator' => '==',
-					'value' => 'custom-aside.php',
+					'value' => 'template-aside.php',
 					'order_no' => 0,
 					'group_no' => 0,
 				),
@@ -98,7 +98,7 @@ if(function_exists("register_field_group"))
 				array (
 					'param' => 'page_template',
 					'operator' => '==',
-					'value' => 'custom-aside-tabs.php',
+					'value' => 'template-aside-tabs.php',
 					'order_no' => 0,
 					'group_no' => 1,
 				),
@@ -132,18 +132,9 @@ if(function_exists("register_field_group"))
 				array (
 					'param' => 'page_template',
 					'operator' => '==',
-					'value' => 'custom-twosections.php',
+					'value' => 'template-twosections.php',
 					'order_no' => 0,
 					'group_no' => 0,
-				),
-			),
-			array (
-				array (
-					'param' => 'page_template',
-					'operator' => '==',
-					'value' => 'custom-sidemenu-twosections.php',
-					'order_no' => 0,
-					'group_no' => 1,
 				),
 			),
 		),
@@ -329,7 +320,7 @@ if(function_exists("register_field_group"))
 				array (
 					'param' => 'page_template',
 					'operator' => '==',
-					'value' => 'custom-tabs.php',
+					'value' => 'template-tabs.php',
 					'order_no' => 0,
 					'group_no' => 0,
 				),
@@ -338,7 +329,7 @@ if(function_exists("register_field_group"))
 				array (
 					'param' => 'page_template',
 					'operator' => '==',
-					'value' => 'custom-aside-tabs.php',
+					'value' => 'template-aside-tabs.php',
 					'order_no' => 0,
 					'group_no' => 1,
 				),
