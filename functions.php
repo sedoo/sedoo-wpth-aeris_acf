@@ -5,6 +5,6 @@ function theme_enqueue_styles() {
 
 }
 
-
+include 'inc/config-acf.php';
 
 ?>
