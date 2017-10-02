@@ -24,7 +24,7 @@ while ( have_posts() ) : the_post();
 				if ($fields) {
 					echo "<div style=\"padding:10px; background-color:orange;color:white;\">";
 					echo "<p>ACF WARNING !!</p>"; 
-					if (get_field('second-custom_twosections-share')) { echo "<p>Contenu dans \"2 sections égales\" à migrer</p>";}
+					if (get_field('second-custom_twosections-share')) { echo "<p>Contenu dans \"Seconde section\" à migrer</p>";}
 					for($j=1; $j<7; $j++){ 
 						if(get_field('content-tab'.$j.'-custom_tabs') !== "" && get_field('title-tab'.$j.'-custom_tabs') !== "") {
 							echo "<p>Contenu dans \"Tableau à onglets\" à migrer</p>";
