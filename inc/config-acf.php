@@ -3,73 +3,6 @@
 if(function_exists("register_field_group"))
 {
 	register_field_group(array (
-		'id' => 'acf_choix-menu',
-		'title' => 'Choix menu',
-		'fields' => array (
-			array (
-				'key' => 'field_573040cb017c4',
-				'label' => 'Ajouter un sous menu',
-				'name' => 'choice-have_menu-share',
-				'type' => 'checkbox',
-				'choices' => array (
-					'activer' => 'Activer',
-				),
-				'default_value' => '',
-				'layout' => 'horizontal',
-			),
-			array (
-				'key' => 'field_573051ea0a6c6',
-				'label' => 'Afficher les éléments enfants',
-				'name' => 'choice-display_child_list-share',
-				'type' => 'checkbox',
-				'choices' => array (
-					'afficher' => 'Afficher',
-				),
-				'default_value' => '',
-				'layout' => 'horizontal',
-			),
-		),
-		'location' => array (
-			array (
-				array (
-					'param' => 'post_type',
-					'operator' => '==',
-					'value' => 'page',
-					'order_no' => 0,
-					'group_no' => 0,
-				),
-				array (
-					'param' => 'page_template',
-					'operator' => '!=',
-					'value' => 'template-sidemenu-all.php',
-					'order_no' => 1,
-					'group_no' => 0,
-				),
-				array (
-					'param' => 'page_template',
-					'operator' => '!=',
-					'value' => 'template-aside.php',
-					'order_no' => 2,
-					'group_no' => 0,
-				),
-				array (
-					'param' => 'page_template',
-					'operator' => '!=',
-					'value' => 'template-aside-tabs.php',
-					'order_no' => 3,
-					'group_no' => 0,
-				),
-			),
-		),
-		'options' => array (
-			'position' => 'side',
-			'layout' => 'default',
-			'hide_on_screen' => array (
-			),
-		),
-		'menu_order' => 0,
-	));
-	register_field_group(array (
 		'id' => 'acf_custom-aside',
 		'title' => 'Custom aside',
 		'fields' => array (
@@ -103,6 +36,15 @@ if(function_exists("register_field_group"))
 					'group_no' => 1,
 				),
 			),
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'page',
+					'order_no' => 0,
+					'group_no' => 1,
+				),
+			),
 		),
 		'options' => array (
 			'position' => 'normal',
@@ -121,7 +63,7 @@ if(function_exists("register_field_group"))
 				'label' => 'Seconde section',
 				'name' => 'second-custom_twosections-share',
 				'type' => 'wysiwyg',
-				'required' => 1,
+				'required' => 0,
 				'default_value' => '',
 				'toolbar' => 'full',
 				'media_upload' => 'yes',
@@ -135,6 +77,15 @@ if(function_exists("register_field_group"))
 					'value' => 'template-twosections.php',
 					'order_no' => 0,
 					'group_no' => 0,
+				),
+			),
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'page',
+					'order_no' => 0,
+					'group_no' => 1,
 				),
 			),
 		),
@@ -330,6 +281,15 @@ if(function_exists("register_field_group"))
 					'param' => 'page_template',
 					'operator' => '==',
 					'value' => 'template-aside-tabs.php',
+					'order_no' => 0,
+					'group_no' => 1,
+				),
+			),
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'page',
 					'order_no' => 0,
 					'group_no' => 1,
 				),
