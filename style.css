@@ -5,7 +5,7 @@
  Author:       SEDOO OMP - Pierre VERT
  Author URI:   http://sedoo.fr
  Template:     aeris-wordpress-theme
- Version:      1.0.5
+ Version:      1.1.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain:  aeris-wordpress-theme-child ACF
@@ -13,5 +13,164 @@
  GitHub Branch: master
 */
 
+/* TABS */
 
+.worko-tabs {
+  margin: 20px 0;
+}
+.worko-tabs .state {
+  position: absolute;
+  left: -10000px;
+}
+.worko-tabs .flex-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.worko-tabs .flex-tabs .tab {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-height: 40px;
+}
+.worko-tabs .flex-tabs .panel {
+  background-color: #fff;
+  padding: 20px;
+  min-height: 300px;
+  display: none;
+  width: 100%;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+.worko-tabs .tab {
+  display: inline-block;
+  padding: 10px;
+  vertical-align: top;
+  background-color: #FFF;
+  cursor: hand;
+  cursor: pointer;
+  text-align: center;
+  /* border-left: 10px solid #ccc; */
+}
+.worko-tabs .tab:hover {
+  background-color: #eee;
+}
+
+#tab-1:checked ~ .tabs #tab-1-label,
+#tab-2:checked ~ .tabs #tab-2-label,
+#tab-3:checked ~ .tabs #tab-3-label,
+#tab-4:checked ~ .tabs #tab-4-label,
+#tab-5:checked ~ .tabs #tab-5-label,
+#tab-6:checked ~ .tabs #tab-6-label  {
+  background-color: #fff;
+  cursor: default;
+}
+
+#tab-1:checked ~ .tabs #tab-1-panel,
+#tab-2:checked ~ .tabs #tab-2-panel,
+#tab-3:checked ~ .tabs #tab-3-panel,
+#tab-4:checked ~ .tabs #tab-4-panel,
+#tab-5:checked ~ .tabs #tab-5-panel,
+#tab-6:checked ~ .tabs #tab-6-panel  {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .flex-tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flex-tabs .tab {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  .flex-tabs .tab:last-of-type {
+    border-bottom: none;
+  }
+  .flex-tabs #tab-1-label {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .flex-tabs #tab-2-label {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .flex-tabs #tab-3-label {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .flex-tabs #tab-4-label {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
+  .flex-tabs #tab-5-label {
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+  }
+  .flex-tabs #tab-6-label {
+    -webkit-box-ordinal-group: 12;
+        -ms-flex-order: 11;
+            order: 11;
+  }
+  .flex-tabs #tab-1-panel {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .flex-tabs #tab-2-panel {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .flex-tabs #tab-3-panel {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  .flex-tabs #tab-4-panel {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+  .flex-tabs #tab-5-panel {
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
+  }
+  .flex-tabs #tab-6-panel {
+    -webkit-box-ordinal-group: 13;
+        -ms-flex-order: 12;
+            order: 12;
+  }
+
+  #tab-1:checked ~ .tabs #tab-1-label,
+  #tab-2:checked ~ .tabs #tab-2-label,
+  #tab-3:checked ~ .tabs #tab-3-label,
+  #tab-4:checked ~ .tabs #tab-4-label,
+  #tab-5:checked ~ .tabs #tab-5-label,
+  #tab-6:checked ~ .tabs #tab-6-label {
+    border-bottom: none;
+  }
+
+  #tab-1:checked ~ .tabs #tab-1-panel,
+  #tab-2:checked ~ .tabs #tab-2-panel,
+  #tab-3:checked ~ .tabs #tab-3-panel,
+  #tab-4:checked ~ .tabs #tab-4-panel,
+  #tab-5:checked ~ .tabs #tab-5-panel,
+  #tab-6:checked ~ .tabs #tab-6-panel {
+    border-bottom: 1px solid #ccc;
+  }
+}
 
