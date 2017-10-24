@@ -9,7 +9,7 @@ while ( have_posts() ) : the_post();
 	get_template_part( 'template-parts/header-content', 'page' );
 ?>
 
-	<div id="content-area" class="wrapper default">
+	<div id="content-area" class="wrapper large">
 		<main id="main" class="site-main" role="main">
 
         <?php 
