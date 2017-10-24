@@ -1,17 +1,49 @@
 /*
  Theme Name:   Aeris ACF pour migration
- Theme URI:    
+ Theme URI:    https://github.com/sedoo/sedoo-wpth-aeris_acf
  Description:  Theme enfant Aeris utilisant Advanced Custom Fields
  Author:       SEDOO OMP - Pierre VERT
  Author URI:   http://sedoo.fr
  Template:     aeris-wordpress-theme
- Version:      1.1.0
+ Version:      1.1.1
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain:  aeris-wordpress-theme-child ACF
  GitHub Theme URI: sedoo/sedoo-wpth-aeris_acf
  GitHub Branch: master
 */
+
+/* NEW WRAPPER */
+.large[id="content-area"] main {
+  max-width: 1024px;
+}
+
+.large[id="content-area"] article > .main-content {
+  padding-right:20px;
+}
+.large[id="content-area"] article > .second-content {
+  padding-left:20px;
+  border-left:1px solid #CCC;
+}
+
+/* Deux sections égales */
+.large.twosection[id="content-area"] main > article > :nth-child(n+2) {
+  float: left;
+  width: 50%;
+}
+
+/* Section de côté */
+.large.aside[id="content-area"] article > .main-content,
+.large.aside[id="content-area"] article > .second-content {
+  float: left;
+}
+
+.large.aside[id="content-area"] article > .main-content {
+  width: 66.666666%;
+}
+.large.aside[id="content-area"] article > .second-content {
+  width: 33.333333%;
+}
 
 /* TABS */
 
@@ -36,7 +68,6 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  max-height: 40px;
 }
 .worko-tabs .flex-tabs .panel {
   background-color: #fff;

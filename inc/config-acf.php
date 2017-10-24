@@ -22,29 +22,29 @@ if(function_exists("register_field_group"))
 				array (
 					'param' => 'page_template',
 					'operator' => '==',
-					'value' => 'template-aside.php',
+					'value' => 'custom-aside.php',
 					'order_no' => 0,
 					'group_no' => 0,
 				),
 			),
-			array (
-				array (
-					'param' => 'page_template',
-					'operator' => '==',
-					'value' => 'template-aside-tabs.php',
-					'order_no' => 0,
-					'group_no' => 1,
-				),
-			),
-			array (
-				array (
-					'param' => 'post_type',
-					'operator' => '==',
-					'value' => 'page',
-					'order_no' => 0,
-					'group_no' => 1,
-				),
-			),
+			// array (
+			// 	array (
+			// 		'param' => 'page_template',
+			// 		'operator' => '==',
+			// 		'value' => 'template-aside-tabs.php',
+			// 		'order_no' => 0,
+			// 		'group_no' => 1,
+			// 	),
+			// ),
+			// array (
+			// 	array (
+			// 		'param' => 'post_type',
+			// 		'operator' => '==',
+			// 		'value' => 'page',
+			// 		'order_no' => 0,
+			// 		'group_no' => 1,
+			// 	),
+			// ),
 		),
 		'options' => array (
 			'position' => 'normal',
@@ -74,20 +74,20 @@ if(function_exists("register_field_group"))
 				array (
 					'param' => 'page_template',
 					'operator' => '==',
-					'value' => 'template-twosections.php',
+					'value' => 'custom-twosections.php',
 					'order_no' => 0,
 					'group_no' => 0,
 				),
 			),
-			array (
-				array (
-					'param' => 'post_type',
-					'operator' => '==',
-					'value' => 'page',
-					'order_no' => 0,
-					'group_no' => 1,
-				),
-			),
+			// array (
+			// 	array (
+			// 		'param' => 'post_type',
+			// 		'operator' => '==',
+			// 		'value' => 'page',
+			// 		'order_no' => 0,
+			// 		'group_no' => 1,
+			// 	),
+			// ),
 		),
 		'options' => array (
 			'position' => 'normal',
@@ -276,24 +276,24 @@ if(function_exists("register_field_group"))
 					'group_no' => 0,
 				),
 			),
-			array (
-				array (
-					'param' => 'page_template',
-					'operator' => '==',
-					'value' => 'template-aside-tabs.php',
-					'order_no' => 0,
-					'group_no' => 1,
-				),
-			),
-			array (
-				array (
-					'param' => 'post_type',
-					'operator' => '==',
-					'value' => 'page',
-					'order_no' => 0,
-					'group_no' => 1,
-				),
-			),
+			// array (
+			// 	array (
+			// 		'param' => 'page_template',
+			// 		'operator' => '==',
+			// 		'value' => 'template-aside-tabs.php',
+			// 		'order_no' => 0,
+			// 		'group_no' => 1,
+			// 	),
+			// ),
+			// array (
+			// 	array (
+			// 		'param' => 'post_type',
+			// 		'operator' => '==',
+			// 		'value' => 'page',
+			// 		'order_no' => 0,
+			// 		'group_no' => 1,
+			// 	),
+			// ),
 		),
 		'options' => array (
 			'position' => 'normal',
