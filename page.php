@@ -48,8 +48,6 @@ while ( have_posts() ) : the_post();
 			if ($fields) {
 			?>
 				<div class="wrapper-content">
-					<h1>ACF zone</h1>
-
 					<?php
 					if (get_field('second-custom_twosections-share')) {
 					?>
